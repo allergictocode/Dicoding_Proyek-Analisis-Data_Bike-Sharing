@@ -6,12 +6,12 @@ import numpy as np
 
 # load dataset
 def load_data_hour():
-    data = pd.read_csv('hour.csv')
+    data = pd.read_csv('./hour.csv')
     data['dteday'] = pd.to_datetime(data['dteday'])
     return data
 
 def load_data_day():
-    data = pd.read_csv('day.csv')
+    data = pd.read_csv('./day.csv')
     data['dteday'] = pd.to_datetime(data['dteday'])
     return data
 
